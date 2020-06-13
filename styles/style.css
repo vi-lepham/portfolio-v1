@@ -163,6 +163,7 @@ body {
   height: 130vh;
   width: 100%;
   padding: 2% 5%;
+  position: relative;
 }
 
 .s-landing .nav {
@@ -247,6 +248,19 @@ body {
   font-size: 20px;
 }
 
+.s-landing .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5vw;
+  position: absolute;
+  right: 5%;
+  bottom: 27%;
+}
+
 .s-about, .s-projects, .s-contact {
   padding: 2% 5%;
 }
@@ -306,8 +320,6 @@ body {
 
 .s-about .c-content .profile-image-wrapper img {
   width: 100%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
 }
 
 .s-projects {

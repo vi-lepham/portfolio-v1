@@ -113,6 +113,7 @@ body {
     height: 130vh;
     width: 100%;
     padding: 2% 5%;
+    position: relative;
 
     .nav {
         display: flex;
@@ -175,6 +176,14 @@ body {
             font-size: 20px;
         }
     }
+    .language {
+        display: flex;
+        justify-content: space-between;
+        width: 5vw;
+        position: absolute;
+        right: 5%;
+        bottom: 27%;
+    }
 }
 
 .s-about, .s-projects, .s-contact {
@@ -218,7 +227,6 @@ body {
             margin-top: 25%;
             img {
                 width: 100%;
-                filter: grayscale(1);
             }
         }
     }
