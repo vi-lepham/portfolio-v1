@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Pham Le Vi - Front End Developer</title>
+</head>
+<body>
+    <div data-scroll-container class="o-scroll" id="js-scroll">
+        <section data-scroll-section class="s-landing">
+            <div class="nav">
+                <div class="nav-left" data-scroll>
+                    <div>Front End Developement</div>
+                    <div>Portfolio - 01</div>
+                </div>
+                <div class="nav-right" data-scroll>
+                    <ul>
+                        <li class="nav-right-items">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-right-items">
+                            <a href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-right-items">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero" data-scroll data-scroll-speed="-8">
+                <div class="hero-title">
+                    <p>Hi, this is</p>
+                    <h2>Pham Le Vi.</h2>
+                    <h5>
+                        I turn ideas into functional web apps
+                    </h5>
+                </div>
+
+                <br>
+                <div class="hero-cta"><a href="#contact">Get in touch &rarr;</a></div>
+            </div>
+        </section>
+        <section data-scroll-section id="about" class="s-about" data-scroll-section-inview>
+            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+                <div class="border-top"></div>
+                <div class="s-title-text">
+                    <p>N° 1</p>
+                    <h4>ABOUT</h4>
+                </div>
+            </div>
+            
+            <div class="c-content">
+                <div class="profile-image-wrapper parallax" data-speed="2">
+                    <div class="profile-image parallax" data-speed="-2" data-direction="vertical">
+                        <img src="profile.jpg" alt="Pham Le Vi Profile Image">
+                    </div>
+                </div>
+                <div class="s-text">
+                    <h1>A front-end developer living in Kawagoe, Japan</h1>
+                    <p>Hi! My name is Pham Le Vi, a design-minded front-end developer dedicated to building beautiful and efficient user interfaces and experiences.
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ex? In, voluptas quidem nostrum nesciunt ad rem sequi perspiciatis vitae.
+                    </p>
+                    <div class="experience">
+                        <h2>Technologies that I have been working with:</h2>
+                        <br>
+                        <ul>
+                            <li>Javascript (ES6+)</li>
+                            <li>React</li>
+                            <li>Node.JS</li>
+                            <li>HTML & (S)CSS</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section data-scroll-section id="projects" class="s-projects" data-scroll-section-inview>
+            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+                <div class="border-top"></div>
+                <div class="s-title-text">
+                    <p>N° 2</p>
+                    <h4>PROJECTS</h4>
+                </div>
+            </div>
+            <div class="c-project">
+                <div class="s-text">
+                    <div class="project-number">01</div>
+                    <h1>La Viose E-commerce Site</h1>
+                    <h4>React.js, Firebase</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis rem qui repudiandae ullam, necessitatibus architecto!</p>
+                    <div class="time">06.20</div>
+                </div>
+                <div class="s-image"></div>
+    
+            </div>
+            <div class="c-project">
+                <div class="s-text">
+                    <div class="project-number">02</div>
+                    <h1>Recipe Finder</h1>
+                    <h4>React.js, PWA, API</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis rem qui repudiandae ullam, necessitatibus architecto!</p>
+                    <div class="time">07.20</div>
+                </div>
+                <div class="s-image"></div>
+                
+            </div>
+        </section>
+        <section data-scroll-section id="contact" class="s-contact" data-scroll-section-inview>
+            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+                <div class="border-top"></div>
+                <div class="s-title-text">
+                    <p>N° 3</p>
+                    <h4>CONTACT</h4>
+                </div>
+            </div>
+            <div class="c-contact">
+                <div class="s-text">
+                    <h1 style="font-size: 30px;">Download my Resume <a href="#" style="font-style: italic;">here</a></h1>
+                    <h1>And feel free to reach out &rarr;</h1>
+                </div>
+                <form>
+                    <div>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="text" id="title" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea id="body" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="fixed-contact-bar" style="position: fixed; bottom: 0; left: 5%; height: 40vh;">
+        <ul style="display: flex; flex-direction: column; align-items: center;">
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-envelope-o"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-linkedin"></i></li>
+            <li style="background-color: lightgoldenrodyellow; width: 1px; height: 17vh;"></li>
+        </ul>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
