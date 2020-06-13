@@ -1,3 +1,46 @@
+// Landing page animation
+
+TweenMax.to(".bg", 2, {
+    width: "100%",
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".nav-left", 1.5, {
+    delay: 1,
+    opacity: 0,
+    y: -20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.staggerFrom(".nav-right li", 1.5, {
+    delay: 1.2,
+    opacity: 0,
+    y: -20,
+    ease: Expo.easeInOut
+}, 0.08)
+
+TweenMax.staggerFrom(".hero-title li", 1.5, {
+    delay: 1.5,
+    opacity: 0,
+    y: -30,
+    ease: Expo.easeInOut
+}, 0.08)
+
+TweenMax.from(".hero-cta", 1.5, {
+    delay: 2,
+    opacity: 0,
+    x: "-10%",
+    ease: Expo.easeInOut
+})
+
+TweenMax.staggerFrom(".fixed-contact-bar ul li", 1.5, {
+    delay: 2.5,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut
+}, 0.08)
+
+
 // Intersection Observer 
 const animatedBorder = document.querySelectorAll('.border-top');
 
@@ -22,7 +65,8 @@ const observer2 = new IntersectionObserver((entries, observer) => {
         if (!entry.isIntersecting) {
             return
         } 
-        entry.target.style.animation = 'slideUp 1s ease-in';
+        entry.target.style.animation = 'slideUp 0.8s ease-in';
+        entry.target.style.opacity = '1';
         observer.unobserve(entry.target);
     })
 }, {rootMargin: "0px 0px -50px 0px", threshold: 1})
@@ -39,12 +83,13 @@ const observer3 = new IntersectionObserver((entries, observer) => {
         if (!entry.isIntersecting) {
             return
         } 
-        entry.target.style.animation = 'fadeIn 1s ease-in';
+        entry.target.style.animation = 'fadeIn 0.8s ease-in';
         entry.target.style.opacity = '1';
         observer.unobserve(entry.target);
     })
-}, {threshold: 0.4})
+}, {threshold: 0.2})
 
 animatedTexts.forEach(text => {
     observer3.observe(text);
 })
+

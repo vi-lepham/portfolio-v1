@@ -10,8 +10,9 @@
     <title>Pham Le Vi - Front End Developer</title>
 </head>
 <body>
-    <div data-scroll-container class="o-scroll" id="js-scroll">
-        <section data-scroll-section class="s-landing">
+    <div class="bg"></div>
+    <div>
+        <section class="s-landing">
             <div class="nav">
                 <div class="nav-left" data-scroll>
                     <div>Front End Developement</div>
@@ -32,13 +33,17 @@
                 </div>
             </div>
             <div class="hero" data-scroll data-scroll-speed="-8">
-                <div class="hero-title">
-                    <p>Hi, this is</p>
-                    <h2>Pham Le Vi.</h2>
-                    <h5>
-                        I turn ideas into functional web apps
-                    </h5>
-                </div>
+                <ul class="hero-title">
+                    <li>
+                        <p>Hi, this is</p>
+                    </li>
+                    <li>
+                        <h2>Pham Le Vi.</h2>
+                    </li>
+                    <li>
+                        <h5>I turn ideas into functional web apps</h5>
+                    </li>
+                </ul>
 
                 <br>
                 <div class="hero-cta"><a href="#contact">Get in touch &rarr;</a></div>
@@ -73,12 +78,10 @@
                             <li>React</li>
                             <li>Node.JS</li>
                             <li>HTML & (S)CSS</li>
-                            
                         </ul>
                     </div>
                 </div>
             </div>
-            
         </section>
         <section data-scroll-section id="projects" class="s-projects" data-scroll-section-inview>
             <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
@@ -121,8 +124,8 @@
             </div>
             <div class="c-contact">
                 <div class="s-text">
-                    <h1 style="font-size: 30px;">Download my Resume <a href="#" style="font-style: italic;">here</a></h1>
-                    <h1>And feel free to reach out &rarr;</h1>
+                    <h1 style="font-size: 35px;">Download my Resume <a href="#" style="font-style: italic;">here</a></h1>
+                    <h1 style="font-size: 25px;">Inquiries are welcome &rarr;</h1>
                 </div>
                 <form>
                     <div>
@@ -138,15 +141,26 @@
             </div>
         </section>
         <div class="fixed-contact-bar" style="position: fixed; bottom: 0; left: 5%; height: 40vh;">
-        <ul style="display: flex; flex-direction: column; align-items: center;">
-            <li><i class="fa fa-github"></i></li>
-            <li><i class="fa fa-envelope-o"></i></li>
-            <li><i class="fa fa-instagram"></i></li>
-            <li><i class="fa fa-linkedin"></i></li>
-            <li style="background-color: lightgoldenrodyellow; width: 1px; height: 17vh;"></li>
-        </ul>
+            <ul style="display: flex; flex-direction: column; align-items: center;">
+                <li>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope-o"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li style="background-color: lightgoldenrodyellow; width: 1px; height: 17vh;"></li>
+            </ul>
+        </div>
     </div>
-    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
