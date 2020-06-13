@@ -224,7 +224,7 @@ body {
 }
 
 .s-landing .hero {
-  margin: 10vh 8vw;
+  margin: 8vh 15vw;
 }
 
 .s-landing .hero .hero-title {
@@ -232,7 +232,7 @@ body {
 }
 
 .s-landing .hero .hero-title h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   -webkit-transform: translateX(-0.5%);
           transform: translateX(-0.5%);
 }
