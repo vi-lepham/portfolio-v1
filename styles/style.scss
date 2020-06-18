@@ -1,3 +1,15 @@
+@mixin mobile {
+    @media (max-width: 400px) {
+        @content;
+    }
+} 
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+} 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +48,7 @@ a:hover::after {
 }
 
 .border-top {
-    width: 53vw;
+    width: 100%;
     height: 1px;
     background: $secondaryColor;
     transform: scale(0);
@@ -49,10 +61,12 @@ a:hover::after {
     text-align: right;
     position: absolute;
     right: 5%;
+    width: 53vw;
     
     .s-title-text {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         
         p {
             font-size: 25px;
@@ -110,7 +124,7 @@ body {
 }
 
 .s-landing {
-    height: 130vh;
+    height: 100vh;
     width: 100%;
     padding: 2% 5%;
     position: relative;
@@ -182,7 +196,7 @@ body {
         width: 5vw;
         position: absolute;
         right: 5%;
-        bottom: 27%;
+        top: 73%;
     }
 }
 
@@ -222,7 +236,7 @@ body {
         }
         .profile-image-wrapper {
             width: 35%;
-            height: 75vh;
+            height: fit-content;
             overflow: hidden;
             margin-top: 25%;
             img {
@@ -318,6 +332,128 @@ body {
         a:hover {
             font-size: 24px;
             transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+@include tablet() {
+    .s-about{
+        height: fit-content;
+        margin-bottom: 40%;
+    }
+    .s-contact {
+        height: 80vh;
+        .c-contact {
+            flex-direction: column;
+            .s-text{
+                margin-top: 40%;
+                width: 85%;
+                margin-left: 10%;
+            }
+            form {
+                margin-top: 5%;
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+@include mobile() {
+    .s-landing {
+        padding: 5%;
+        .nav {
+            .nav-left {
+                font-size: 17px;
+            }
+            .nav-right{
+                font-size: 20px;
+                text-align: right;
+            }
+        }
+        .hero {
+            margin: 8vh 7vw 8vh 10vw;
+            .hero-title {
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 10%;
+                }
+                h5 {
+                    font-size: 1.5rem;
+                    transform: translateY(-20%);
+                }
+            }
+            .hero-cta {
+                font-size: 17px;
+            }
+        }
+        .language {
+            flex-direction: column;
+            align-items: center;
+            height: 7vh;
+        }
+    }
+    .s-title {
+        font-size: 50px;
+        width: 80%;
+    }
+    .s-about {
+        margin-bottom: 50%;
+        .c-content{
+            flex-direction: column;
+            .s-text{
+                width: 90%;
+                h1{
+                    font-size: 30px;
+                }
+            }
+            .profile-image-wrapper{
+                width: 90%;
+                margin-top: 30%;
+                margin-left: 5%;
+            }
+        }
+    }
+    .s-projects{
+        .c-project {
+            flex-direction: column;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            .s-text {
+                width: 90%;
+                padding-left: 5%;
+                height: fit-content;
+                .time {
+                    font-size: 80px;
+                    font-weight: 600;
+    
+                    transform: rotate(0);
+                    position: absolute;
+                    bottom: -55%;
+                    left: 40%;
+                }
+            }
+            .s-image {
+                width: 85%;
+                height: 60vh;
+                margin-top: 15vh;
+                margin-left: 12%;
+            }
+        }
+    }
+    .s-contact {
+        .c-contact {
+            .s-text{
+                margin-top: 30%;
+                h1{
+                    font-size: 27px;
+                }
+            }
+            form {
+                width: 85%;
+                margin-left: 10%;
+            }
         }
     }
 }
