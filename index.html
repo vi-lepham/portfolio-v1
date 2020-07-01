@@ -14,11 +14,11 @@
     <div>
         <section class="s-landing">
             <div class="nav">
-                <div class="nav-left" data-scroll>
+                <div class="nav-left">
                     <div>Front End Developement</div>
                     <div>Portfolio - 01</div>
                 </div>
-                <div class="nav-right" data-scroll>
+                <div class="nav-right">
                     <ul>
                         <li class="nav-right-items">
                             <a href="#about">ABOUT</a>
@@ -32,7 +32,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hero" data-scroll data-scroll-speed="-8">
+            <div class="hero">
                 <ul class="hero-title">
                     <li>
                         <p>Hi, this is</p>
@@ -53,8 +53,8 @@
                 <li>EN</li>
             </ul>
         </section>
-        <section data-scroll-section id="about" class="s-about" data-scroll-section-inview>
-            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+        <section id="about" class="s-about">
+            <div class="s-title">
                 <div class="border-top"></div>
                 <div class="s-title-text">
                     <p>N° 1</p>
@@ -63,32 +63,32 @@
             </div>
             
             <div class="c-content">
-                <div class="profile-image-wrapper parallax" data-speed="2">
-                    <div class="profile-image parallax" data-speed="-2" data-direction="vertical">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
                         <img src="profile.jpg" alt="Pham Le Vi Profile Image">
                     </div>
                 </div>
                 <div class="s-text">
-                    <h1>A front-end developer living in Kawagoe, Japan</h1>
-                    <p>Hi! My name is Pham Le Vi, a design-minded front-end developer dedicated to building beautiful and efficient user interfaces and experiences.
+                    <h1>A front-end developer based in Kawagoe, Japan</h1>
+                    <p>My name is Pham Le Vi, a front-end engineer with main experience in React development. 
                         <br>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ex? In, voluptas quidem nostrum nesciunt ad rem sequi perspiciatis vitae.
+                        I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that not only look good but also provide pixel-perfect, performant experiences.
                     </p>
                     <div class="experience">
-                        <h2>Technologies that I have been working with:</h2>
+                        <h2>Main technologies that I have experience working with:</h2>
                         <br>
                         <ul>
+                            <li>React/Redux</li>
                             <li>Javascript (ES6+)</li>
-                            <li>React</li>
-                            <li>Node.JS</li>
+                            <li>Firebase</li>
                             <li>HTML & (S)CSS</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-scroll-section id="projects" class="s-projects" data-scroll-section-inview>
-            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+        <section id="projects" class="s-projects">
+            <div class="s-title">
                 <div class="border-top"></div>
                 <div class="s-title-text">
                     <p>N° 2</p>
@@ -98,12 +98,15 @@
             <div class="c-project">
                 <div class="s-text">
                     <div class="project-number">01</div>
-                    <h1>La Viose E-commerce Site</h1>
-                    <h4>React.js, Firebase</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis rem qui repudiandae ullam, necessitatibus architecto!</p>
-                    <div class="time">06.20</div>
+                    <h1>Skivi Clothing</h1>
+                    <h4>React, Redux, Firebase, Stripe</h4>
+                    <p>An ecommerce site built with React + Redux. Backend storage and Google Sign In handled with Firebase, card payment handled with Stripe.</p>
+                    <a href="https://github.com/vilepham/skivi-ecommerce" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
-                <div class="s-image"></div>
+                <div class="time">06.20</div>
+                <div class="s-image">
+                    <a href="https://skivi-clothing.netlify.app/" target="_blank"><img src="skivi.png" alt="Skivi Ecommerce Site Screenshot"></a>
+                </div>
     
             </div>
             <div class="c-project">
@@ -111,7 +114,7 @@
                     <div class="project-number">02</div>
                     <h1>Recipe Finder</h1>
                     <h4>React.js, PWA, API</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis rem qui repudiandae ullam, necessitatibus architecto!</p>
+                    <p></p>
                     <br>
                     <div class="time">07.20</div>
                 </div>
@@ -119,8 +122,8 @@
                 
             </div>
         </section>
-        <section data-scroll-section id="contact" class="s-contact" data-scroll-section-inview>
-            <div class="s-title" data-scroll data-scroll-sticky data-scroll-target="#s-about">
+        <section class="s-contact">
+            <div class="s-title">
                 <div class="border-top"></div>
                 <div class="s-title-text">
                     <p>N° 3</p>
@@ -130,34 +133,40 @@
             <div class="c-contact">
                 <div class="s-text">
                     <h1 style="font-size: 35px;">Download my Resume <a href="#" style="font-style: italic;">here</a></h1>
-                    <p style="font-size: 25px;">Inquiries are welcome &rarr;</p>
+                    <p style="font-size: 20px;">Inquiries are welcome</p>
                 </div>
-                <form>
+                <form class="c-form" method="POST" data-netlify="true">
                     <div>
-                        <input type="email" id="email" placeholder="Email" required>
+                        <label class="input-label" for="email">Email</label>
+                        <input type="email" id="email" required>
                     </div>
                     <div>
-                        <input type="text" id="title" placeholder="Subject">
+                        <label class="input-label" for="subject">Subject</label>
+                        <input type="text" id="subject">
                     </div>
                     <div>
-                        <textarea id="body" placeholder="Message"></textarea>
+                        <label class="input-label" for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send">
                     </div>
                 </form>
             </div>
         </section>
-        <div class="fixed-contact-bar" style="position: fixed; bottom: 0; left: 5%; height: 40vh;">
+        <div class="fixed-contact-bar" style="position: fixed; bottom: -5%; left: 5%; height: auto;">
             <ul style="display: flex; flex-direction: column; align-items: center;">
                 <li>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/vilepham" target="_blank"><i class="fa fa-github"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://www.linkedin.com/in/le-vi-pham-9697861b1/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope-o" target="_blank"></i></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li style="background-color: lightgoldenrodyellow; width: 1px; height: 17vh;"></li>
             </ul>
