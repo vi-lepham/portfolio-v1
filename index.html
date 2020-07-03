@@ -48,10 +48,6 @@
                 <br>
                 <div class="hero-cta"><a href="#contact">Get in touch &rarr;</a></div>
             </div>
-            <ul class="language">
-                <li>JP</li>
-                <li>EN</li>
-            </ul>
         </section>
         <section id="about" class="s-about">
             <div class="s-title">
@@ -122,7 +118,7 @@
                 
             </div>
         </section>
-        <section class="s-contact">
+        <section class="s-contact" id="contact">
             <div class="s-title">
                 <div class="border-top"></div>
                 <div class="s-title-text">
@@ -138,15 +134,15 @@
                 <form class="c-form" name="contact" method="POST" data-netlify="true">
                     <div>
                         <label class="input-label" for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <input name="email" type="email" id="email" required>
                     </div>
                     <div>
                         <label class="input-label" for="subject">Subject</label>
-                        <input type="text" id="subject">
+                        <input name="subject" type="text" id="subject">
                     </div>
                     <div>
                         <label class="input-label" for="message">Message</label>
-                        <textarea id="message"></textarea>
+                        <textarea name="message" id="message"></textarea>
                     </div>
                     <div>
                         <input type="submit" value="Send">
@@ -177,4 +173,7 @@
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+<footer>
+    <div style="text-align: center; padding: 10px 0; border-top: 0.5px solid wheat;">Designed and built by Pham Le Vi &copy;2020</div>
+</footer>
 </html>
