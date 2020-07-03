@@ -579,16 +579,6 @@ body {
   .s-landing .hero .hero-cta {
     font-size: 17px;
   }
-  .s-landing .language {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 7vh;
-  }
   .s-title {
     font-size: 50px;
     width: 80%;
