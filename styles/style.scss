@@ -188,15 +188,13 @@ body {
         }
         .hero-cta {
             font-size: 20px;
+            border: 0.5px solid $secondaryColor;
+            width: fit-content;
+            padding: 5px;
+            a:hover::after {
+                transform: scale(0);
+            }
         }
-    }
-    .language {
-        display: flex;
-        justify-content: space-between;
-        width: 5vw;
-        position: absolute;
-        right: 5%;
-        top: 73%;
     }
 }
 
@@ -277,9 +275,7 @@ body {
         .time {
             font-size: 70px;
             font-weight: 600;
-            position: absolute;
-            left: 7%;
-            bottom: -5%;
+            
         }
         .s-image {
             width: 60%;

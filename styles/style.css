@@ -249,19 +249,16 @@ body {
 
 .s-landing .hero .hero-cta {
   font-size: 20px;
+  border: 0.5px solid #fcfcc1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
 }
 
-.s-landing .language {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 5vw;
-  position: absolute;
-  right: 5%;
-  top: 73%;
+.s-landing .hero .hero-cta a:hover::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .s-about, .s-projects, .s-contact {
@@ -370,9 +367,6 @@ body {
 .s-projects .c-project .time {
   font-size: 70px;
   font-weight: 600;
-  position: absolute;
-  left: 7%;
-  bottom: -5%;
 }
 
 .s-projects .c-project .s-image {
