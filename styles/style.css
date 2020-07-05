@@ -532,7 +532,7 @@ body {
   text-align: center;
   padding: 10px 0;
   border-top: 0.5px solid wheat;
-  margin-top: 10vh;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -555,6 +555,9 @@ body {
     margin-top: 40%;
     width: 85%;
     margin-left: 10%;
+  }
+  .s-contact .c-contact form {
+    width: 80%;
   }
 }
 
