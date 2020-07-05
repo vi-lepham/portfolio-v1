@@ -40,13 +40,6 @@ TweenMax.staggerFrom(".fixed-contact-bar ul li", 1.5, {
     ease: Expo.easeInOut
 }, 0.08)
 
-TweenMax.from(".language", 1.5, {
-    delay: 2.5,
-    opacity: 0,
-    x: "-10%",
-    ease: Expo.easeInOut
-})
-
 // Intersection Observer 
 const animatedBorder = document.querySelectorAll('.border-top');
 
