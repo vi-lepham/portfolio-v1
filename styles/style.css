@@ -331,6 +331,7 @@ body {
   height: auto;
   width: 100%;
   position: relative;
+  margin-bottom: 10vh;
 }
 
 .s-projects .c-project {
@@ -388,9 +389,8 @@ body {
 }
 
 .s-contact {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
+  margin-bottom: 10vh;
 }
 
 .s-contact .c-contact {

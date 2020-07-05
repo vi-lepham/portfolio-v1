@@ -249,6 +249,7 @@ body {
     height: auto;
     width: 100%;
     position: relative;
+    margin-bottom: 10vh;
     
     .c-project {
         display: flex;
@@ -290,7 +291,8 @@ body {
 }
 
 .s-contact {
-    height: fit-content;
+    height: auto;
+    margin-bottom: 10vh;
     .c-contact {
         display: flex;
         justify-content: space-between;
