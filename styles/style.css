@@ -160,9 +160,7 @@ body {
   color: #fcfcc1;
   font-family: 'Jost', sans-serif;
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
 }
 
 .s-landing {
@@ -389,7 +387,9 @@ body {
 }
 
 .s-contact {
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 10vh;
 }
 
@@ -635,11 +635,17 @@ body {
     margin: 30% 0 5% 0;
   }
   .s-contact .c-contact .s-text h1 {
-    font-size: 27px;
+    font-size: 20px;
+  }
+  .s-contact .c-contact .s-text p {
+    font-size: 15px;
   }
   .s-contact .c-contact form {
     width: 80%;
     margin-left: 10%;
+  }
+  .s-contact .c-contact form .input-label {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -121,7 +121,7 @@ body {
     color: $secondaryColor;
     font-family:'Jost', sans-serif;
     position: relative;
-    height: fit-content;
+    height: 100%;
 }
 
 .s-landing {
@@ -291,7 +291,7 @@ body {
 }
 
 .s-contact {
-    height: auto;
+    height: fit-content;
     margin-bottom: 10vh;
     .c-contact {
         display: flex;
@@ -480,12 +480,18 @@ body {
             .s-text{
                 margin: 30% 0 5% 0;
                 h1{
-                    font-size: 27px;
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 15px;
                 }
             }
             form {
                 width: 80%;
                 margin-left: 10%;
+                .input-label {
+                    font-size: 13px;
+                }
             }
         }
     }
