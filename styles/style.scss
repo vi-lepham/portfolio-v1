@@ -299,7 +299,7 @@ body {
         align-items: center;
         flex-direction: column;
         .s-text{
-            margin: 20% 0 2%;
+            margin: 20% 0 2% 0;
             text-align: center;
         }
         form {
@@ -383,7 +383,7 @@ body {
     text-align: center; 
     padding: 10px 0; 
     border-top: 0.5px solid wheat;
-    margin-top: auto;
+    margin-top: 20vh;
 }
 
 @include tablet() {
@@ -396,9 +396,8 @@ body {
         .c-contact {
             flex-direction: column;
             .s-text{
-                margin-top: 40%;
+                margin: 50% 0 5% 0;
                 width: 85%;
-                margin-left: 10%;
             }
             form {
                 width: 80%;
@@ -479,13 +478,14 @@ body {
     .s-contact {
         .c-contact {
             .s-text{
-                margin-top: 30%;
+                margin: 30% 0 5% 0;
                 h1{
                     font-size: 27px;
                 }
             }
             form {
                 width: 80%;
+                margin-left: 10%;
             }
         }
     }
