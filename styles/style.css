@@ -538,7 +538,7 @@ body {
   margin-top: 20vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .s-landing .hero {
     margin: 15vh 10vw;
   }
@@ -549,7 +549,7 @@ body {
     margin-bottom: 10%;
   }
   .s-projects .c-project {
-    margin-bottom: 5vh;
+    margin: 2vh 0;
   }
   .s-contact {
     height: 80vh;
@@ -559,14 +559,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 5vh;
   }
   .s-contact .c-contact .s-text {
-    margin: 50% 0 5% 0;
+    margin: 30% 0 5% 0;
     width: 85%;
+    font-size: 20px;
   }
   .s-contact .c-contact form {
     width: 80%;
+  }
+  .s-contact .c-contact form input[type="submit"] {
+    height: 4vh;
+    font-size: 22px;
+    border-radius: 2%;
   }
 }
 
