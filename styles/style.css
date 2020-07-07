@@ -538,12 +538,18 @@ body {
   margin-top: 20vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .s-landing .hero {
+    margin: 15vh 10vw;
+  }
   .s-about {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin-bottom: 40%;
+    margin-bottom: 10%;
+  }
+  .s-projects .c-project {
+    margin-bottom: 5vh;
   }
   .s-contact {
     height: 80vh;
@@ -553,6 +559,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 5vh;
   }
   .s-contact .c-contact .s-text {
     margin: 50% 0 5% 0;
