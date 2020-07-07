@@ -582,7 +582,7 @@ body {
     margin-bottom: 10%;
   }
   .s-landing .hero .hero-title h5 {
-    font-size: 1rem;
+    font-size: 22px;
     -webkit-transform: translateY(-20%);
             transform: translateY(-20%);
   }
