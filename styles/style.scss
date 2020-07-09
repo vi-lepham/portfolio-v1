@@ -191,7 +191,7 @@ body {
             font-size: 20px;
             border: 0.5px solid $secondaryColor;
             width: fit-content;
-            padding: 5px;
+            padding: 10px;
             a:hover::after {
                 transform: scale(0);
             }
@@ -251,6 +251,10 @@ body {
     position: relative;
     margin-bottom: 10vh;
     
+    .c-project-titles {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
     .c-project {
         display: flex;
         justify-content: space-between;
@@ -287,7 +291,42 @@ body {
             }
         }
     }
-    
+    .other-projects {
+        margin-left: 7%;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            
+            li {
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                background-color: rgba($color: $secondaryColor, $alpha: 0.8);
+                color: $primaryColor;
+                padding: 2%;
+                &:hover {
+                    background-color: rgba($color: $secondaryColor, $alpha: 1);
+                }
+                .fa-github {
+                    font-size: 30px;
+                    opacity: 0.6;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .time {
+                    font-weight: bold;
+                }
+            }
+            a:hover::after {
+                transform: scale(0);
+            }
+        }
+
+    }
 }
 
 .s-contact {
