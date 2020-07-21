@@ -249,12 +249,28 @@ body {
 }
 
 .s-landing .hero .hero-cta {
-  font-size: 20px;
+  font-size: 17px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s-landing .hero .hero-cta .project-btn, .s-landing .hero .hero-cta .resume-btn {
+  text-align: center;
+  padding: 5px 8px;
   border: 0.5px solid #fcfcc1;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px;
+}
+
+.s-landing .hero .hero-cta .project-btn {
+  color: #9e5688;
+  background-color: #fcfcc1;
 }
 
 .s-landing .hero .hero-cta a:hover::after {
@@ -700,6 +716,9 @@ body {
     width: 85%;
     margin-top: 5vh;
     margin-left: 12%;
+  }
+  .s-projects .other-projects {
+    padding-left: 5%;
   }
   .s-contact .c-contact .s-text {
     margin: 30% 0 5% 0;

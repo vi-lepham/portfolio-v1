@@ -188,10 +188,20 @@ body {
             }
         }
         .hero-cta {
-            font-size: 20px;
-            border: 0.5px solid $secondaryColor;
-            width: fit-content;
-            padding: 10px;
+            font-size: 17px;
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .project-btn, .resume-btn {
+                text-align: center;
+                padding: 5px 8px;
+                border: 0.5px solid $secondaryColor;
+            }
+            .project-btn {
+                color: $primaryColor;
+                background-color: $secondaryColor;
+            }
             a:hover::after {
                 transform: scale(0);
             }
