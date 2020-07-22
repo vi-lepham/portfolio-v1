@@ -193,7 +193,9 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             .project-btn, .resume-btn {
+                min-width: fit-content;
                 text-align: center;
                 padding: 5px 8px;
                 border: 0.5px solid $secondaryColor;

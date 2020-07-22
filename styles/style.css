@@ -260,9 +260,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .s-landing .hero .hero-cta .project-btn, .s-landing .hero .hero-cta .resume-btn {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   text-align: center;
   padding: 5px 8px;
   border: 0.5px solid #fcfcc1;
